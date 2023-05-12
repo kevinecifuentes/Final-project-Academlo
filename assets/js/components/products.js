@@ -31,7 +31,7 @@ function products(products) {
               >
                 <i class="bx bxs-cart-add"></i>
               </button>
-              <span class="product__price">$${product.price}</span>
+              <span class="product__price">Precio: $${product.price}</span>
               <span class="product__stock">En stock: ${product.quantity}</span>
               <h3 class="product__title">${product.name}</h3>
             </div>

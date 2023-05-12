@@ -11,7 +11,13 @@ function cart(db, printProducts) {
     const totalDOM = document.querySelector('.cart__total--item')
     const checkoutDOM = document.querySelector('.btn--buy')
 
-    //Funciones 
+    //Funciones
+
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) { 
+        cart = JSON.parse(storedCart);
+    }
+
     function printCart() {
         let htmlCart = ''
 
@@ -33,7 +39,7 @@ function cart(db, printProducts) {
                 </div>
                 <div class="article__content">
                     <h3 class="article__title">${product.name}</h3>
-                <span class="article__price">$${product.price}</span>
+                <span class="article__price"> $${product.price}</span>
                 <div  class= "article__quantity">
                     <button type="button" class="article__quantity-btn article--minus" data-id="${item.id}">
                         <i class="bx bx-minus"></i>
@@ -61,10 +67,22 @@ function cart(db, printProducts) {
         notifyDOM.innerHTML = showItemsCount();
         countDOM.innerHTML = showItemsCount();
         totalDOM.innerHTML = showTotal();
+
+        /*local store*/
+        function saveLocalStore() {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+        saveLocalStore()
     }
     function addToCart(id, qty = 1) {
+        const product = db.find(p => p.id === id)
         const itemFinded = cart.find(i => i.id === id)
 
+        if (product.quantity < qty) {
+        window.alert("No hay stock");
+            return;
+        }
+        
         if (itemFinded) {
             itemFinded.qty += qty
         } else {
