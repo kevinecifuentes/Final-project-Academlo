@@ -1,16 +1,5 @@
 :root {
   --header-height: 60px;
-  /*--ColorProducContent: hsl(170, 10%, 23%);
-  --ColorLetraCarrito: #ffffff;
-  --ColorButtonCarrito: hsl(173, 78%, 16%);
-   --primary-color: hsl(173, 100%, 21%);   Se modificó el color 
-  --primary-color: hsl(44, 72%, 42%);
-  --body-color: hsl(60, 25%, 98%);
-  hsl(244, 53%, 12%); 
-  --text-color: hsl(200, 18%, 46%);
-  --title-color: hsl(226, 38%, 89%);
-  --bg-color: #ffffff;
-  --card-color: hsl(173, 100%, 21%); */
 
   --dark-color: hsl(22, 83%, 55%);
   --light-color: hsla(47, 71%, 49%, 1);
@@ -22,11 +11,6 @@
   --text-color2: hsl(0, 0%, 1%);
   --text-color3: hsl(38, 73%, 42%);
   --background-1: hsl(40, 64%, 95%);
-
-  /*colores dark*/
-  --background-darkbody: hsl(0, 0%, 7%);
-  --background-darkbody2:hsl(0, 0%, 14%);
-  --text-dark:hsl(43, 90%, 64%);
 
   --body-font: 'Open Sans', sans-serif;
   --tittle-font: 'Russo One', sans-serif;
@@ -78,10 +62,6 @@ html {
   box-sizing: border-box;
   /* background-color: rgb(52, 50, 50); */
 }
-
-/* .footer-section {
-  background-color: rgb(52, 50, 50);
-} */
 
 *,
 *::before,
@@ -159,8 +139,10 @@ img {
 }
 
 body.dark {
-  background-color: var(--bg-color);
-  color: var(--primary-color);
+  --bg-color: hsl(0, 0%, 14%);
+  --body-color: hsl(0, 0%, 8%);
+  --text-color: hsl(90, 60%, 70%);
+  --text-color2: hsl(90, 60%, 70%);
 }
 
 /* loader */
@@ -861,8 +843,6 @@ body.dark {
 .cart__body {
   padding: var(--sp-1);
   overflow-y: auto;
-
-  
 }
 
 .cart__empty {
@@ -915,7 +895,6 @@ body.dark {
   gap: var(--sp-1);
   justify-self: center;
 }
-
 
 .remove-from-cart {
   font-size: 1.32rem;
@@ -1096,5 +1075,3 @@ body.dark {
     top: var(--header-height);
   }
 }
-
-/* procesos de envio*/
