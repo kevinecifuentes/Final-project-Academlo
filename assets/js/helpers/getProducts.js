@@ -215,12 +215,12 @@ const dataBase = [
   },
   {
     id: 21,
-    name: "SUNTORY WHISKY - HIBIKI JAPANESE HARMONY",
+    name: "SUNTORY WHISKY - HIBIKI JAPANESE",
     price: 165,
     image: "assets/images/id_21.png",
     quantity: 2,
     description:
-      "Mantecoso y cremoso en nariz, con notas herbales frescas de cilantro, vainilla, pasteles horneados, albaricoque y frutas secas, aunque las notas herbales se intensifican con el tiempo. En boca se mezclan sabores de ensalada de frutas frescas, vainilla , miel, dulce de azúcar, cítricos dulces, caramelo y una delicada pimienta. Esta expresión tiene una textura fantástica, que equilibra las frutas suaves, la dulzura del dulce de azúcar y los cítricos, para terminar con melón dulce, azúcar glas y un picante dinámico.",
+      "Mantecoso y cremoso en nariz, con notas herbales frescas de cilantro, vainilla, pasteles horneados, albaricoque y frutas secas, aunque las notas herbales se intensifican con el tiempo. En boca se mezclan sabores de ensalada de frutas frescas, vainilla , miel, dulce de azúcar, cítricos dulces, caramelo y una delicada pimienta.",
   },
 ];
 
