@@ -7,7 +7,7 @@
   --body-color: hsl(0, 0%, 96%);
   --primary-color: hsl(43, 90%, 64%);
   --title-color: hsl(226, 38%, 89%);
-  --text-color:hsl(0, 0%, 89%);
+  --text-color: hsl(0, 0%, 89%);
   --text-color2: hsl(0, 0%, 1%);
   --text-color3: hsl(38, 73%, 42%);
   --background-1: hsl(40, 64%, 95%);
@@ -284,7 +284,7 @@ body.dark {
   align-items: center;
   padding: var(--sp-0-5) var(--sp-1);
   color: var(--text-color);
-  text-shadow: 1px 1px ;
+  text-shadow: 1px 1px;
   transition: color 0.3s ease-in-out;
   font-weight: 900;
 }
@@ -592,7 +592,7 @@ body.dark {
 .process {
   background-color: var(--bg-color);
   min-height: 100px;
-  padding-bottom: var(--sp-2) ;
+  padding-bottom: var(--sp-2);
 }
 
 .process--works {
@@ -604,6 +604,10 @@ body.dark {
   font-size: var(--medium-font);
   text-align: center;
   padding: var(--sp-3);
+}
+
+.process__cart__subtitle {
+  margin-bottom: var(--sp-1);
 }
 
 .process__description {
@@ -702,7 +706,7 @@ body.dark {
   background-color: var(--bg-color);
 }
 
-.footer-section{
+.footer-section {
   background-color: var(--bg-color);
 }
 /* 
@@ -738,7 +742,6 @@ body.dark {
 .footer__right {
   display: flex;
   flex-direction: column;
-  
 }
 
 .footer__club {
@@ -921,10 +924,9 @@ body.dark {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  background-color:rgb(168, 121, 47);
+  background-color: rgb(168, 121, 47);
   padding: var(--sp-1);
   row-gap: var(--sp-1);
-
 }
 
 .cart__count {
@@ -961,7 +963,7 @@ body.dark {
 
 .btn--buy:hover {
   grid-column: span 4;
-  background-color: var(--primary-color) ;
+  background-color: var(--primary-color);
   color: hsl(38, 53%, 34%);
   font-weight: 700;
   padding: var(--sp-1);
