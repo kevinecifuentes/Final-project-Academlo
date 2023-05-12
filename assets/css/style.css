@@ -23,6 +23,11 @@
   --text-color3: hsl(38, 73%, 42%);
   --background-1: hsl(40, 64%, 95%);
 
+  /*colores dark*/
+  --background-darkbody: hsl(0, 0%, 7%);
+  --background-darkbody2:hsl(0, 0%, 14%);
+  --text-dark:hsl(43, 90%, 64%);
+
   --body-font: 'Open Sans', sans-serif;
   --tittle-font: 'Russo One', sans-serif;
 
@@ -549,7 +554,7 @@ body.dark {
   align-items: center;
   background-color: var(--bg-color);
   padding: var(--sp-1-5);
-  min-height: 140px;
+  min-height: 200px;
   box-shadow: 0 0 10px rgb(0, 107, 95, 0.3);
   /* border-bottom: 5px solid var(--primary-color); */
 }
@@ -818,6 +823,7 @@ body.dark {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--sp-2);
+  padding-bottom: 3rem;
 }
 
 .cart__container {
